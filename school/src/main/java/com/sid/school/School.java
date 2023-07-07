@@ -1,4 +1,4 @@
-package com.sid.student;
+package com.sid.school;
 
 
 import jakarta.persistence.Entity;
@@ -13,14 +13,12 @@ import lombok.*;
 @Getter
 @Setter
 @Builder
-public class Student {
+public class School {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String firstname;
-    private String lastname;
+    private String name;
     private String email;
-    private Integer schoolId;
 
 }
